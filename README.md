@@ -1,14 +1,21 @@
 # basic_angular
 
+#### File
 ```
 <script type="text/javascript" src="../../files/angular.min.js"></script>
-<script>
+```
+
+#### Module
+```
 var demo = angular.module("demo", [],
   function($interpolateProvider) {
     $interpolateProvider.startSymbol('[!');
     $interpolateProvider.endSymbol('!]');
 }) ///
+```
 
+#### Controller
+```
 demo.controller('Ctrl', function($scope, $http) {
   $scope.huDisplay = 'on';
 
@@ -25,7 +32,4 @@ demo.controller('Ctrl', function($scope, $http) {
 };
 
 }) ///
-
-</script>
-</head>
 ```

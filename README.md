@@ -13,6 +13,7 @@ demo.controller('Ctrl', function($scope, $http) {
   $scope.huDisplay = 'on';
 
   $scope.items = [];
+  
   $http({ method: 'GET', url: '../../list/entries' })
   .success(function(data, status) { $scope.items = data; console.log(data); });
   

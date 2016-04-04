@@ -14,7 +14,7 @@ var demo = angular.module("demo", [],
 }) ///
 ```
 
-#### Controller
+#### Controller [( view )](https://github.com/students-at-thinkful/angular_page_controller)
 ```
 demo.controller('Ctrl', function($scope, $http) {
   $scope.huDisplay = 'on';
